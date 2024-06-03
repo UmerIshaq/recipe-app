@@ -45,7 +45,7 @@ export default async function Page({params}){
                                 {
                                     data.ingredients.map((item)=>{
                                         return(
-                                            <li className="text-gray-700">
+                                            <li className="text-gray-700" key={item.id}>
                                             {item}
                                             </li>
                                         )

@@ -22,7 +22,7 @@ const Recipes = async () => {
         <div className="flex flex-wrap gap-4 justify-center">
           {recipeList.map((item) => {
             return (
-              <Link href={`/recipe-list/${item.id}`}>
+              <Link href={`/recipe-list/${item.id}`} key={item.id}>
                 <Card className="my-4 bg-slate-500 shadow-xl hover:scale-110 focus:scale-x-110 hover:shrink transition-all rounded-lg ">
                     <Image
                     className="rounded-2xl"
